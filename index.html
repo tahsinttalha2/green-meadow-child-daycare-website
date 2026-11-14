@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Green Meadow Daycare — A calm, play-led children's daycare for ages 1 to 5 with Swiss-inspired spaces, organic meals, and outdoor discovery.">
+  <title>Green Meadow Daycare — Play, Wonder &amp; Early Learning (Ages 1–5)</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Accessibility: Skip to main content -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- Fixed Invisible Acrylic Navigation Bar -->
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="#top">
+        <img class="brand-logo" src="assets/green-meadow-logo-01.svg" alt="Green Meadow Daycare home">
+      </a>
+
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a href="#programs">Programs</a></li>
+          <li><a href="#rhythm">Daily Rhythm</a></li>
+          <li><a href="#philosophy">Philosophy</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+        <a class="btn btn-cta nav-cta" href="#visit">Book a Tour</a>
+      </nav>
+
+      <!-- CSS-only accessible mobile navigation using native <details> -->
+      <details class="mobile-nav">
+        <summary class="mobile-nav-toggle" aria-label="Toggle navigation menu">
+          <span>Menu</span>
+        </summary>
+        <nav class="mobile-nav-panel" aria-label="Mobile navigation">
+          <ul>
+            <li><a href="#programs">Programs</a></li>
+            <li><a href="#rhythm">Daily Rhythm</a></li>
+            <li><a href="#philosophy">Philosophy</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a class="btn btn-cta" href="#visit">Book a Tour</a></li>
+          </ul>
+        </nav>
+      </details>
+    </div>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+    <!-- Hero Section -->
+    <section id="top" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Ages 1 – 5 &middot; Autumn &amp; Spring Enrollment Open</p>
+          <h1>Where little minds grow at their own pace.</h1>
+          <p class="lead">
+            A sunlit, low-stimulation daycare built around unhurried play,
+            nature-rich outdoor time, and warm educator bonds.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-cta" href="#visit">Schedule a Visit</a>
+            <a class="btn btn-secondary" href="#programs">Explore Programs</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="swiss-collage">
+            <div class="tile tile-blue">
+              <!-- Hand-drawn sun -->
+              <svg viewBox="0 0 96 96" width="88" height="88" fill="none">
+                <circle cx="48" cy="48" r="20" fill="#FFCBA4" stroke="#181B1A" stroke-width="2.5" />
+                <path d="M48 12V21M48 75V84M12 48H21M75 48H84M22.5 22.5L29 29M67 67L73.5 73.5M73.5 22.5L67 29M29 67L22.5 73.5" stroke="#181B1A" stroke-width="2.5" stroke-linecap="round" />
+                <circle cx="42" cy="45" r="2" fill="#181B1A" />
+                <circle cx="54" cy="45" r="2" fill="#181B1A" />
+                <path d="M42 53C44 56 52 56 54 53" stroke="#181B1A" stroke-width="2.2" stroke-linecap="round" />
+              </svg>
+            </div>
+
+            <div class="tile tile-beige">
+              <!-- Hand-drawn wooden blocks -->
+              <svg viewBox="0 0 96 96" width="88" height="88" fill="none">
+                <rect x="20" y="48" width="26" height="26" rx="4" fill="#CBE4F9" stroke="#181B1A" stroke-width="2.4" />
+                <rect x="50" y="48" width="26" height="26" rx="4" fill="#62D84E" stroke="#181B1A" stroke-width="2.4" />
+                <path d="M35 46L48 22L61 46H35Z" fill="#FFCBA4" stroke="#181B1A" stroke-width="2.4" stroke-linejoin="round" />
+              </svg>
+            </div>
+
+            <div class="tile tile-green">
+              <!-- Hand-drawn leaf/sprout -->
+              <svg viewBox="0 0 96 96" width="88" height="88" fill="none">
+                <path d="M26 70C30 44 46 28 70 24C68 48 52 66 26 70Z" fill="#FFFFFF" stroke="#181B1A" stroke-width="2.4" stroke-linejoin="round" />
+                <path d="M26 70C40 56 52 44 64 31" stroke="#181B1A" stroke-width="2.2" stroke-linecap="round" />
+                <path d="M43 53H55M50 46V35" stroke="#181B1A" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </div>
+
+            <div class="tile tile-orange">
+              <!-- Hand-drawn paintbrush & star -->
+              <svg viewBox="0 0 96 96" width="88" height="88" fill="none">
+                <path d="M26 68L58 36L65 43L33 75C30 77 24 71 26 68Z" fill="#FFFFFF" stroke="#181B1A" stroke-width="2.4" stroke-linejoin="round" />
+                <path d="M58 36C62 28 70 24 76 26C74 33 70 39 65 43" fill="#62D84E" stroke="#181B1A" stroke-width="2.4" stroke-linejoin="round" />
+                <path d="M26 28L29 34L35 35L30 39L31 45L26 42L21 45L22 39L17 35L23 34L26 28Z" fill="#CBE4F9" stroke="#181B1A" stroke-width="2" stroke-linejoin="round" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Swiss Key Metrics Strip -->
+      <div class="container">
+        <dl class="metrics-strip" aria-label="Daycare highlights">
+          <div class="metric-item">
+            <dt>Educator-to-Child Ratio</dt>
+            <dd>1 : 4</dd>
+          </div>
+          <div class="metric-item">
+            <dt>Daily Outdoor Play</dt>
+            <dd>3+ hrs</dd>
+          </div>
+          <div class="metric-item">
+            <dt>Organic Seasonal Meals</dt>
+            <dd>100%</dd>
+          </div>
+          <div class="metric-item">
+            <dt>Weekday Care Hours</dt>
+            <dd>07:30 – 18:00</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- Age-Group Programs -->
+    <section id="programs" class="section" aria-labelledby="programs-heading">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="programs-heading">Three gentle stages, designed around readiness.</h2>
+          <p class="section-intro">
+            Small groups ensure every child is known deeply, supported calmly, and never rushed.
+          </p>
+        </header>
+
+        <div class="cards-grid">
+          <article class="program-card card-blue">
+            <img class="program-3d-img" src="assets/nestlings-3d.jpg" alt="" aria-hidden="true">
+            <p class="card-age">12 – 24 Months</p>
+            <h3>Nestlings</h3>
+            <p>
+              A quiet, tactile sanctuary focused on attachment, sensory discovery, and unhurried motor milestones.
+            </p>
+            <ul class="card-list">
+              <li>1 : 3 caregiver ratio</li>
+              <li>Custom nap &amp; feeding rhythms</li>
+              <li>Soft natural-wood sensory trays</li>
+            </ul>
+          </article>
+
+          <article class="program-card card-green">
+            <img class="program-3d-img" src="assets/sprouts-3d.jpg" alt="" aria-hidden="true">
+            <p class="card-age">2 – 3 Years</p>
+            <h3>Sprouts</h3>
+            <p>
+              Language blossoms through songs, mud-kitchen play, storytelling, and early cooperative friendships.
+            </p>
+            <ul class="card-list">
+              <li>1 : 4 educator ratio</li>
+              <li>Garden &amp; mud-kitchen mornings</li>
+              <li>Gentle, child-led potty readiness</li>
+            </ul>
+          </article>
+
+          <article class="program-card card-orange">
+            <img class="program-3d-img" src="assets/explorers-3d.jpg" alt="" aria-hidden="true">
+            <p class="card-age">3 – 5 Years</p>
+            <h3>Explorers</h3>
+            <p>
+              Project-based curiosity blending art studio work, early numeracy, forest walks, and emotional confidence.
+            </p>
+            <ul class="card-list">
+              <li>1 : 6 educator ratio</li>
+              <li>Weekly botanical &amp; studio projects</li>
+              <li>Joyful school-readiness foundation</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Colourful Infographics Section -->
+    <section id="rhythm" class="section section-beige" aria-labelledby="rhythm-heading">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="rhythm-heading">A visual look at how each day unfolds.</h2>
+          <p class="section-intro">
+            Children thrive on predictable, unhurried transitions. Here is how a typical 10-hour day is balanced.
+          </p>
+        </header>
+
+        <!-- Infographic 1: Stacked Proportion Bar -->
+        <figure class="infographic-panel" aria-labelledby="infographic-day-title">
+          <div class="infographic-header">
+            <h3 id="infographic-day-title">Daily Time Allocation (10-Hour Day)</h3>
+            <span class="infographic-total">100% Balanced Care</span>
+          </div>
+
+          <div class="stacked-bar" role="img" aria-label="Daily time allocation: 30% outdoor discovery, 25% creative studio and music, 25% rest and quiet stories, 20% nourishing meals and care.">
+            <div class="bar-segment seg-green" style="--pct: 30%;">
+              <span>30%</span>
+            </div>
+            <div class="bar-segment seg-orange" style="--pct: 25%;">
+              <span>25%</span>
+            </div>
+            <div class="bar-segment seg-blue" style="--pct: 25%;">
+              <span>25%</span>
+            </div>
+            <div class="bar-segment seg-beige" style="--pct: 20%;">
+              <span>20%</span>
+            </div>
+          </div>
+
+          <figcaption class="legend-grid">
+            <div class="legend-item">
+              <span class="swatch seg-green" aria-hidden="true"></span>
+              <div>
+                <strong>Outdoor Discovery (30%)</strong>
+                <p>Garden play, sandbox engineering, and neighborhood nature walks.</p>
+              </div>
+            </div>
+            <div class="legend-item">
+              <span class="swatch seg-orange" aria-hidden="true"></span>
+              <div>
+                <strong>Creative Studio &amp; Music (25%)</strong>
+                <p>Clay, watercolors, wooden blocks, rhythm instruments, and story circles.</p>
+              </div>
+            </div>
+            <div class="legend-item">
+              <span class="swatch seg-blue" aria-hidden="true"></span>
+              <div>
+                <strong>Rest &amp; Quiet Stories (25%)</strong>
+                <p>Cozy cots, soft lullabies, and calm reading corners for recharge.</p>
+              </div>
+            </div>
+            <div class="legend-item">
+              <span class="swatch seg-beige" aria-hidden="true"></span>
+              <div>
+                <strong>Nourishing Meals &amp; Care (20%)</strong>
+                <p>Family-style organic breakfast, warm lunch, and afternoon fruit.</p>
+              </div>
+            </div>
+          </figcaption>
+        </figure>
+
+        <!-- Infographic 2: Four Pillars Vertical Meter Chart -->
+        <div class="infographic-split">
+          <figure class="infographic-panel" aria-labelledby="infographic-pillars-title">
+            <h3 id="infographic-pillars-title">Developmental Focus Pillars</h3>
+            <p class="panel-sub">Weekly guided &amp; child-led emphasis across key early-years domains.</p>
+
+            <div class="meter-chart">
+              <div class="meter-col">
+                <div class="meter-track" aria-hidden="true">
+                  <div class="meter-fill seg-green" style="--val: 90%;"></div>
+                </div>
+                <span class="meter-pct">90%</span>
+                <span class="meter-label">Social &amp; Emotional</span>
+              </div>
+
+              <div class="meter-col">
+                <div class="meter-track" aria-hidden="true">
+                  <div class="meter-fill seg-blue" style="--val: 85%;"></div>
+                </div>
+                <span class="meter-pct">85%</span>
+                <span class="meter-label">Gross &amp; Fine Motor</span>
+              </div>
+
+              <div class="meter-col">
+                <div class="meter-track" aria-hidden="true">
+                  <div class="meter-fill seg-orange" style="--val: 80%;"></div>
+                </div>
+                <span class="meter-pct">80%</span>
+                <span class="meter-label">Language &amp; Story</span>
+              </div>
+
+              <div class="meter-col">
+                <div class="meter-track" aria-hidden="true">
+                  <div class="meter-fill seg-green" style="--val: 75%;"></div>
+                </div>
+                <span class="meter-pct">75%</span>
+                <span class="meter-label">Early Inquiry</span>
+              </div>
+            </div>
+
+            <figcaption class="sr-only">
+              Weekly developmental focus: Social and Emotional 90%, Gross and Fine Motor 85%, Language and Story 80%, Early Inquiry 75%.
+            </figcaption>
+          </figure>
+
+          <!-- Schedule Timeline Card -->
+          <div class="infographic-panel">
+            <h3>Sample Morning &amp; Afternoon</h3>
+            <p class="panel-sub">Predictable anchors keep toddlers feeling safe and confident.</p>
+            <ol class="timeline-list">
+              <li>
+                <time datetime="07:30">07:30</time>
+                <span>Warm welcome &amp; calm table play</span>
+              </li>
+              <li>
+                <time datetime="09:00">09:00</time>
+                <span>Organic oat bowl &amp; morning song</span>
+              </li>
+              <li>
+                <time datetime="09:45">09:45</time>
+                <span>Courtyard garden &amp; sensory exploration</span>
+              </li>
+              <li>
+                <time datetime="11:45">11:45</time>
+                <span>Family-style warm seasonal lunch</span>
+              </li>
+              <li>
+                <time datetime="12:30">12:30</time>
+                <span>Rest time &amp; quiet audiobooks</span>
+              </li>
+              <li>
+                <time datetime="15:00">15:00</time>
+                <span>Art studio, baking &amp; afternoon fruit</span>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Philosophy -->
+    <section id="philosophy" class="section" aria-labelledby="philosophy-heading">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="philosophy-heading">Calm rooms, curious hands, zero screens.</h2>
+        </header>
+
+        <div class="principles-grid">
+          <article class="principle">
+            <h3>Attachment First</h3>
+            <p>Each child is paired with a primary educator who greets them every morning and tracks their comfort and growth.</p>
+          </article>
+
+          <article class="principle">
+            <h3>Whole-Food Kitchen</h3>
+            <p>Our in-house cook prepares nut-free, seasonal vegetarian and whole-grain meals with zero refined sugars.</p>
+          </article>
+
+          <article class="principle">
+            <h3>Low-Stimulation Design</h3>
+            <p>Birch furniture, soft daylight, and uncluttered shelves help young nervous systems stay settled and focused.</p>
+          </article>
+
+          <article class="principle">
+            <h3>Transparent Family Notes</h3>
+            <p>At pick-up, you receive a warm daily summary of meals, naps, favorite moments, and emerging interests.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Accessible FAQ Accordion (Pure HTML <details>) -->
+    <section id="faq" class="section section-beige" aria-labelledby="faq-heading">
+      <div class="container container-narrow">
+        <header class="section-header">
+          <h2 id="faq-heading">Frequently asked by parents.</h2>
+        </header>
+
+        <div class="faq-list">
+          <details class="faq-item" open>
+            <summary>What is included in monthly tuition?</summary>
+            <p>
+              Tuition covers all organic meals and snacks, cloth diapering or eco-wipes for Nestlings,
+              art studio materials, and daily outdoor gear storage.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>How do you handle food allergies and dietary needs?</summary>
+            <p>
+              Green Meadow is strictly nut-free and sesame-free. Our kitchen accommodates dairy-free,
+              egg-free, halal, and vegetarian plans with individual allergen-safe prep stations.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Can we choose part-time days?</summary>
+            <p>
+              Yes. Families may enroll for 3-day (Mon–Wed or Wed–Fri) or 5-day schedules.
+              We recommend at least 3 consecutive days so younger children settle comfortably.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>How does the settling-in period work?</summary>
+            <p>
+              We follow a gentle 2-week transition where a parent or caregiver joins for short
+              morning visits before gradually stepping back as your child bonds with their educator.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tour Booking Form -->
+    <section id="visit" class="section" aria-labelledby="visit-heading">
+      <div class="container visit-grid">
+        <div class="visit-copy">
+          <h2 id="visit-heading">Come see the classrooms in person.</h2>
+          <p>
+            Morning tours run Tuesday through Thursday at 09:30 so you can experience the calm
+            rhythm of our rooms and meet the teaching team.
+          </p>
+          <div class="address-card">
+            <p><strong>Green Meadow Daycare</strong></p>
+            <p>248 Linden Avenue, Brookside</p>
+            <p>Open Monday – Friday, 07:30 – 18:00</p>
+            <p><a href="mailto:hello@greenmeadow.example">hello@greenmeadow.example</a></p>
+          </div>
+        </div>
+
+        <form class="tour-form" action="#visit" method="post">
+          <fieldset>
+            <legend class="sr-only">Request a daycare tour</legend>
+
+            <div class="form-field">
+              <label for="parent-name">Parent or Guardian Name</label>
+              <input id="parent-name" name="parent_name" type="text" autocomplete="name" required placeholder="e.g. Maya Lin">
+            </div>
+
+            <div class="form-field">
+              <label for="parent-email">Email Address</label>
+              <input id="parent-email" name="email" type="email" autocomplete="email" required placeholder="maya@example.com">
+            </div>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="child-age">Child's Age Group</label>
+                <select id="child-age" name="age_group" required>
+                  <option value="">Select a stage</option>
+                  <option value="nestlings">Nestlings (12–24 months)</option>
+                  <option value="sprouts">Sprouts (2–3 years)</option>
+                  <option value="explorers">Explorers (3–5 years)</option>
+                </select>
+              </div>
+
+              <div class="form-field">
+                <label for="start-month">Preferred Start</label>
+                <input id="start-month" name="start_month" type="month" aria-describedby="start-help">
+                <span id="start-help" class="field-hint">Approximate month is fine.</span>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="notes">Questions or Notes (Optional)</label>
+              <textarea id="notes" name="notes" rows="3" placeholder="Allergies, preferred tour day, or questions..."></textarea>
+            </div>
+
+            <button class="btn btn-cta btn-full" type="submit">Request Morning Tour</button>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-brand">Green Meadow Daycare</p>
+        <p class="footer-note">
+          Play-led early childhood care for ages 1–5. Built with semantic HTML &amp; CSS, high-contrast palettes, and keyboard-first navigation.
+        </p>
+      </div>
+      <nav aria-label="Footer navigation">
+        <ul class="footer-links">
+          <li><a href="#programs">Programs</a></li>
+          <li><a href="#rhythm">Daily Rhythm</a></li>
+          <li><a href="#philosophy">Philosophy</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#visit">Book a Tour</a></li>
+        </ul>
+      </nav>
+      <p class="footer-copy">&copy; 2026 Green Meadow Daycare. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
